@@ -1,0 +1,22 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow, noarchive" />
+<meta name="description" content="{{ $.Site.Params.description }}" />
+<meta name="author" content="{{ $.Site.Params.author }}" />
+
+<title>{{ $.Site.Title }}</title>
+
+<!-- Hugo generator -->
+{{ hugo.Generator }}
+
+<!-- Internal termplates-->
+{{ if $.Site.GoogleAnalytics }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/opengraph.html" . }}
+
+<!-- CSS styles -->
+{{ partial "styles.html" . }}
