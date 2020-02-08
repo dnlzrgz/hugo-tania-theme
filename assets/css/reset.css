@@ -13,6 +13,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: var(--darker-blue);
+  text-decoration: none;
+}
+
 h1 {
   font-size: var(--h1);
   margin: 0.67rem 0;
@@ -34,6 +39,12 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 [hidden] {
