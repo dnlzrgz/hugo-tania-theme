@@ -1,0 +1,7 @@
+{{ $vars := resources.Get "css/vars.css" }}
+{{ $reset := resources.Get "css/reset.css" }}
+{{ $css := resources.Get "css/style.css" }}
+{{ $style := slice $vars $reset $css | resources.Concat "css/bundle.css" }}
+{{ $bundle := $style | resources.Minify | resources.Fingerprint }}
+
+<link rel="stylesheet" href="{{ $bundle.Permalink }}">
