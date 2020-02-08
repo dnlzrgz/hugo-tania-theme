@@ -1,0 +1,41 @@
+html {
+  line-height: 1.15;
+}
+
+body {
+  font-size: 100%;
+  font-family: var(--font-family);
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: var(--h1);
+  margin: 0.67rem 0;
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+p {
+  font-size: var(--p);
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+[hidden] {
+  display: none;
+}

@@ -1,0 +1,16 @@
+:root {
+  /* Colors */
+  --background: #fce3cc;
+  --pink: #ee91c7;
+  --blue: #89b3f2;
+  --green: #60ef94;
+
+
+  /* Fonts */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --h1: 4.209rem;
+  --h2: 3.157rem;
+  --h3: 2.369rem;
+  --p: 1.15rem;
+}
