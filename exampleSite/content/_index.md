@@ -1,7 +1,6 @@
 ---
-title: 'Home'
-description: ''
-image: ''
+title: "Home"
+description: ""
 menu: main
 weight: 1
 ---
