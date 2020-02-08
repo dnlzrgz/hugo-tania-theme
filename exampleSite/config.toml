@@ -1,0 +1,24 @@
+baseURL = "/"
+title = "Tania - Hugo Theme"
+author = "Danielkvist"
+googleAnalytics = ""
+enableRobotsTXT = true
+language = "en-US"
+copyright = ""
+
+theme = "hugo-tania-theme"
+themesDir = "../.."
+
+[params.social]
+    "500px" = ""
+    codepen = "#"
+    facebook = ""
+    github = "#"
+    gitlab = ""
+    instagram = "#"
+    linkedin = "#"
+    mastodon = ""
+    pinterest = ""
+    twitter = "#"
+    weibo = ""
+    youtube = ""
