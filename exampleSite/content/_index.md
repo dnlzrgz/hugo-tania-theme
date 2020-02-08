@@ -1,8 +1,6 @@
 ---
-title: "Home"
+title: "Tania"
 description: ""
-menu: main
-weight: 1
 ---
 
 # Tania
