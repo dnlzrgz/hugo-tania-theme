@@ -1,8 +1,9 @@
 .header {
-  width: 75%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
+  max-width: 1200px;
+  width: 75%;
 }
 
 .header__title {

@@ -2,7 +2,8 @@
   border-top: 1px solid var(--blue);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: auto;
+  margin: 2.75rem auto;
+  max-width: 1200px;
   padding-bottom: 1.75rem;
   padding-top: 1.75rem;
   width: 75%;
@@ -24,5 +25,6 @@
 }
 
 .footer__social {
+  text-align: right;
   color: var(--darkest-blue);
 }

@@ -4,12 +4,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin: 7.75rem auto;
+  max-width: 600px;
   min-height: 90vh;
   width: 75%;
 }
 
 .main > h1 {
+  font-size: var(--h2);
   align-self: start;
   margin-bottom: 1.75rem;
+}
+
+.main > p {
+  font-size: 1.45rem;
+  line-height: 2.05rem;
 }
