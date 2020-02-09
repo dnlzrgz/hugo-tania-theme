@@ -1,6 +1,7 @@
 baseURL = "/"
 title = "Tania - Hugo Theme"
 author = "Danielkvist"
+description = "Tania is a simple and clean theme for Hugo."
 googleAnalytics = ""
 enableRobotsTXT = true
 language = "en-US"

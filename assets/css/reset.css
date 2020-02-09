@@ -36,9 +36,23 @@ h3 {
   font-size: var(--h3);
 }
 
+figure {
+  margin: 1.75rem auto;
+}
+
+figcaption {
+  text-align: center;
+}
+
 p {
   font-size: var(--p);
   line-height: 1.75rem;
+}
+
+blockquote > p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 hr {
@@ -47,10 +61,15 @@ hr {
   overflow: visible;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+img {
+  width: 100%;
 }
 
 [hidden] {
