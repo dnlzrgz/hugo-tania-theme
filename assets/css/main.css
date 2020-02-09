@@ -1,0 +1,14 @@
+.main {
+  align-items: center;
+  color: var(--darkest-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  min-height: 90vh;
+  width: 75%;
+}
+
+.main > h1 {
+  margin-bottom: 1.75rem;
+}

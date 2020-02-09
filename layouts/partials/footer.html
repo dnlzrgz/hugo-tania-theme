@@ -1,0 +1,12 @@
+<footer class="footer">
+  {{ if $.Site.Params.Contact.email }}
+  <a
+    class="footer__contact"
+    href="mailto:{{ $.Site.Params.Contact.email }}"
+    alt="{{ $.Site.Params.Contact.email }}"
+    >{{ $.Site.Params.Contact.email }}</a
+  >
+  {{ end }}
+
+  
+</footer>
