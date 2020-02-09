@@ -1,12 +1,32 @@
 <footer class="footer">
   {{ if $.Site.Params.Contact.email }}
-  <a
-    class="footer__contact"
-    href="mailto:{{ $.Site.Params.Contact.email }}"
-    alt="{{ $.Site.Params.Contact.email }}"
-    >{{ $.Site.Params.Contact.email }}</a
-  >
+  <div class="footer__contact">
+    <p class="footer__header">Contact me at: </p>
+    <a
+      class="footer__contact__mail"
+      href="mailto:{{ $.Site.Params.Contact.email }}"
+      alt="{{ $.Site.Params.Contact.email }}"
+      >{{ $.Site.Params.Contact.email }}</a>
+  </div>
   {{ end }}
 
-  
+  {{ if $.Site.Params.social }}
+  <div class="footer__social">
+    <p class="footer__header">Find me on: </p>
+    {{ $items := $.Site.Params.social }}
+    {{ $len := (len $items) }}
+
+    {{ if gt $len 0 }}
+    {{ range $k, $v := $items }}
+    <a
+      class="footer__social__link"
+      href="{{ $v }}"
+      alt="{{ $k }}"
+      target="_blank"
+      rel="nofollow"
+      >{{ $k }}</a> /
+    {{ end }}
+    {{ end }}
+  </div>
+  {{ end }}
 </footer>

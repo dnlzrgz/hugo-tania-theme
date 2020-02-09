@@ -1,16 +1,26 @@
 .footer {
-  margin: auto;
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-  width: 75%;
   border-top: 1px solid var(--blue);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  padding-bottom: 1.75rem;
+  padding-top: 1.75rem;
+  width: 75%;
+}
+
+.footer__header {
+  font-weight: 600;
+  line-height: 0.35rem;
 }
 
 .footer__contact {
+}
+
+.footer__contact__mail {
   color: var(--darker-pink);
   font-size: var(--p);
 }
 
-.footer__contact:hover {
+.footer__contact__mail:hover {
   color: var(--pink);
 }

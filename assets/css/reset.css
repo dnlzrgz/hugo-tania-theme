@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--blue);
+}
+
 h1 {
   font-size: var(--h1);
   margin: 0.67rem 0;
