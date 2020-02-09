@@ -1,6 +1,6 @@
 ---
 title: "Tania"
-description: ""
+description: "Tania is a simple and clean theme for Hugo."
 ---
 
 # A simple and clean theme for Hugo.
