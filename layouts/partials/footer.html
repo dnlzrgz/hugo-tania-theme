@@ -18,6 +18,7 @@
 
     {{ if gt $len 0 }}
     {{ range $k, $v := $items }}
+    {{ if $v }}
     <a
       class="footer__social__link"
       href="{{ $v }}"
@@ -25,6 +26,7 @@
       target="_blank"
       rel="nofollow"
       >{{ $k }}</a> /
+    {{ end }}
     {{ end }}
     {{ end }}
   </div>

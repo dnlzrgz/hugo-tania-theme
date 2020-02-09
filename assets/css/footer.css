@@ -9,11 +9,9 @@
 }
 
 .footer__header {
+  color: var(--darkest-blue);
   font-weight: 600;
   line-height: 0.35rem;
-}
-
-.footer__contact {
 }
 
 .footer__contact__mail {
@@ -23,4 +21,8 @@
 
 .footer__contact__mail:hover {
   color: var(--pink);
+}
+
+.footer__social {
+  color: var(--darkest-blue);
 }

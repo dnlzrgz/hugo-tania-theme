@@ -10,5 +10,6 @@
 }
 
 .main > h1 {
+  align-self: start;
   margin-bottom: 1.75rem;
 }
