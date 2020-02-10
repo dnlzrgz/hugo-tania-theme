@@ -54,7 +54,8 @@
   padding-left: 0.75rem;
 }
 
-.menu__item__link:hover {
+.menu__item__link:hover,
+.menu__item__link.active {
   background: linear-gradient(
     to right,
     var(--pink) 5px,

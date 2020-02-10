@@ -3,7 +3,13 @@
   margin: 7.75rem auto;
   max-width: 600px;
   min-height: 90vh;
+  text-align: justify;
+  text-justify: newspaper;
   width: 75%;
+}
+
+.main > h1 {
+  text-align: left;
 }
 
 .home.main {

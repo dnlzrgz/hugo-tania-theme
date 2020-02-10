@@ -1,0 +1,9 @@
+.card {
+  border-bottom: 1px solid var(--blue);
+  padding: 1.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.card__article__header__title {
+  font-size: var(--h2);
+}

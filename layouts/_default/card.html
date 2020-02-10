@@ -1,0 +1,21 @@
+<section class="card">
+  <article class="card__article">
+    <header class="card__article__header">
+      <h1 class="card__article__header__title">{{ .Params.Title }}</h1>
+    </header>
+
+    <main class="card__article__text">
+      <p>{{ .Content }}</p>
+    </main>
+
+    <footer class="card__footer">
+      <a
+        class="card__footer__link"
+        href="https://{{ .Params.URL }}"
+        alt="{{ .Params.Title }}"
+      >
+        {{ .Params.Site }}
+      </a>
+    </footer>
+  </article>
+</section>

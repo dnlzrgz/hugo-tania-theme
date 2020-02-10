@@ -3,8 +3,9 @@
 {{ $header := resources.Get "css/header.css" }}
 {{ $main := resources.Get "css/main.css" }}
 {{ $footer := resources.Get "css/footer.css" }}
+{{ $cards := resources.Get "css/card.css" }}
 {{ $css := resources.Get "css/style.css" }}
-{{ $style := slice $vars $reset $header $main $footer $css | resources.Concat "css/bundle.css" }}
+{{ $style := slice $vars $reset $header $main $footer $cards $css | resources.Concat "css/bundle.css" }}
 {{ $bundle := $style | resources.Minify | resources.Fingerprint }}
 
 <link rel="stylesheet" href="{{ $bundle.Permalink }}">

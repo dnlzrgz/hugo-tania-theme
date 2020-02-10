@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main class="list main">
+  {{ $projects := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "projects")}}
+
+  {{ range $projects.Pages}}
+  {{ .Render "card" }}
+  {{ end }}
+
+</main>
+{{ end }}
