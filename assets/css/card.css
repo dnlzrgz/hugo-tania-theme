@@ -7,3 +7,9 @@
 .card__article__header__title {
   font-size: var(--h2);
 }
+
+@media (max-width: 577px) {
+  .card {
+    padding: 0.25rem;
+  }
+}
