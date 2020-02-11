@@ -44,11 +44,7 @@
 }
 
 .menu__item__link {
-  background: linear-gradient(
-    to right,
-    var(--pink) 5px,
-    transparent 5px
-  );
+  background: linear-gradient(to right, var(--pink) 5px, transparent 5px);
   background-repeat: repeat-x;
   background-size: 100%;
   padding-left: 0.75rem;
@@ -56,11 +52,7 @@
 
 .menu__item__link:hover,
 .menu__item__link.active {
-  background: linear-gradient(
-    to right,
-    var(--pink) 5px,
-    transparent
-  );
+  background: linear-gradient(to right, var(--pink) 5px, transparent);
 }
 
 @keyframes rainbow-text {
@@ -80,10 +72,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
   }
-  
+
   .header__title {
     justify-content: center;
-    margin-bottom: 2.75rem;
   }
 }
 

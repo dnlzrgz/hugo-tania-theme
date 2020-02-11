@@ -20,13 +20,11 @@
 }
 
 .home.main > h1 {
-  font-size: var(--h2);
   align-self: start;
   margin-bottom: 1.75rem;
 }
 
 .home.main > p {
-  font-size: 1.45rem;
   line-height: 2.05rem;
 }
 

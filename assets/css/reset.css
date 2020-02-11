@@ -15,7 +15,6 @@ body {
 
 a {
   color: var(--darker-blue);
-  font-size: var(--p);
   text-decoration: none;
 }
 
@@ -50,9 +49,9 @@ p {
 }
 
 blockquote > p {
-  text-align: center;
-  font-weight: 600;
   font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 hr {
