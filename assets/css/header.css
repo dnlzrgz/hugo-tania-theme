@@ -22,9 +22,11 @@
   background-size: 100%;
   background-image: linear-gradient(
     45deg,
-    var(--pink) 33.3%,
-    var(--blue) 66.6%,
-    var(--green) 83.33%
+    var(--pink) 16.6%,
+    var(--darker-pink) 33.3%,
+    var(--blue) 49.8%,
+    var(--darker-blue) 66.4%,
+    var(--green) 83%
   );
   font-size: var(--h3);
   font-weight: 600;
