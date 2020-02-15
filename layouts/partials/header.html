@@ -13,8 +13,9 @@
         <a
           href="{{ .URL }}"
           class="menu__item__link {{ if $current.IsMenuCurrent "main" . }} active {{ end }}"
+          aria-current="{{ if $current.IsMenuCurrent "main" . }} page {{ end }}"
           alt="{{ .Name }}"
-        >
+          >
           {{ .Name }}
         </a>
       </li>
