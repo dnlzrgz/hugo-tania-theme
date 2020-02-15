@@ -1,7 +1,5 @@
 baseURL = "/"
 title = "Tania - Hugo Theme"
-author = "Danielkvist"
-description = "Tania is a simple and clean theme for Hugo."
 googleAnalytics = ""
 enableRobotsTXT = true
 language = "en-US"
@@ -9,6 +7,10 @@ copyright = ""
 
 theme = "hugo-tania-theme"
 themesDir = "../.."
+
+[params]
+  author = "Danielkvist"
+  description = "Tania is a simple and clean theme for Hugo."
 
 [params.contact]
   email = "danielkvist@protonmail.com"
