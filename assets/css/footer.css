@@ -1,6 +1,7 @@
 .footer {
   border-top: 1px solid var(--blue);
   display: grid;
+  grid-template-areas: 'mail links';
   grid-template-columns: repeat(2, 1fr);
   margin: 2.75rem auto;
   max-width: 1200px;
@@ -18,6 +19,7 @@
 .footer__contact__mail {
   color: var(--darker-pink);
   font-size: var(--p);
+  grid-area: mail;
 }
 
 .footer__contact__mail:hover {
@@ -27,11 +29,13 @@
 .footer__social {
   text-align: right;
   color: var(--darkest-blue);
+  grid-area: links;
 }
 
 @media (max-width: 577px) {
   .footer {
     grid-gap: 20px;
+    grid-template-areas: 'mail' 'links';
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
   }

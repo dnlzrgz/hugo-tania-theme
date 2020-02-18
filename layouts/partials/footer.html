@@ -1,7 +1,9 @@
+{{ if or $.Site.Params.Contact.email $.Site.Params.links }}
 <footer class="footer">
   {{ if $.Site.Params.Contact.email }}
   <div class="footer__contact">
-    <p class="footer__header">Contact me at: </p>
+    <p class="footer__header">
+      {{ $.Site.Params.Contact.text | default "Contact me at:" }}</p>
     <a
       class="footer__contact__mail"
       href="mailto:{{ $.Site.Params.Contact.email }}"
@@ -12,8 +14,10 @@
 
   {{ if $.Site.Params.social }}
   <div class="footer__social">
-    <p class="footer__header">Find me on: </p>
-    {{ $items := $.Site.Params.social }}
+    <p class="footer__header">
+      {{ $.Site.Params.Social.text | default "Find me on:"}}
+    </p>
+    {{ $items := $.Site.Params.links }}
     {{ $len := (len $items) }}
 
     {{ if gt $len 0 }}
@@ -32,3 +36,4 @@
   </div>
   {{ end }}
 </footer>
+{{ end }}
