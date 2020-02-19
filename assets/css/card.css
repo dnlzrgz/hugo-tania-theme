@@ -8,6 +8,15 @@
   font-size: var(--h2);
 }
 
+.card__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card__tags__item {
+  margin-right: 0.75rem;
+}
+
 @media (max-width: 577px) {
   .card {
     padding: 0.25rem;

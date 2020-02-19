@@ -1,21 +1,29 @@
 <section class="card">
   <article class="card__article">
     <header class="card__article__header">
-      <h1 class="card__article__header__title">{{ .Params.Title }}</h1>
+      <h1 class="card__article__header__title">
+        <a href="{{ .Params.URL }}" alt="{{ .Params.Title }}">
+        {{ .Params.Title }}
+      </a>
+      </h1>
     </header>
 
-    <main class="card__article__text">
+    <main class="card__article__content">
       <p>{{ .Content }}</p>
     </main>
 
-    <footer class="card__footer">
-      <a
-        class="card__footer__link"
-        href="https://{{ .Params.URL }}"
-        alt="{{ .Params.Title }}"
-      >
-        {{ .Params.Site }}
-      </a>
+    <footer class="card__article__footer">
+      <ul class="card__tags">
+        {{ if gt .Params.Tags 0 }}
+        {{ range .Params.Tags }}
+        <li class="card__tags__item">
+          <a href="{{ $.Site.BaseURL }}tags/{{ . }}" alt="{{ . }}">
+            #{{ . }}
+          </a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
     </footer>
   </article>
 </section>
