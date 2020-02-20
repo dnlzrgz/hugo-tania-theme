@@ -62,9 +62,12 @@ hr {
 
 ul,
 ol {
-  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+li {
+  margin-bottom: 0.75rem;
 }
 
 img {

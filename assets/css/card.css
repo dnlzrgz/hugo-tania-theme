@@ -11,9 +11,11 @@
 .card__tags {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .card__tags__item {
+  margin-bottom: 0;
   margin-right: 0.75rem;
 }
 

@@ -38,11 +38,16 @@
 }
 
 .menu {
+  list-style: none;
   height: 100%;
   align-items: center;
   display: flex;
   justify-content: space-evenly;
   font-size: var(--p);
+}
+
+.menu__item {
+  margin: 0;
 }
 
 .menu__item__link::before,
@@ -58,7 +63,7 @@
   background-repeat: repeat;
   background-size: 100%;
   border-radius: 5px;
-  content: '';
+  content: "";
   display: block;
   height: 5px;
   left: 50%;
