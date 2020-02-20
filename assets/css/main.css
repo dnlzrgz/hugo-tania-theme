@@ -12,6 +12,10 @@
   text-align: left;
 }
 
+.main > .home.main {
+  line-height: 2.05rem;
+}
+
 .home.main {
   align-items: center;
   display: flex;
@@ -24,8 +28,8 @@
   margin-bottom: 1.75rem;
 }
 
-.home.main > p {
-  line-height: 2.05rem;
+.notfound {
+  text-align: center !important;
 }
 
 @media (max-width: 577px) {
