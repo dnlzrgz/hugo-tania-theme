@@ -3,7 +3,7 @@ title = "Tania - Hugo Theme"
 googleAnalytics = ""
 enableRobotsTXT = true
 language = "en-US"
-copyright = ""
+copyright = "© 2020 Daniel (Danielkvist). This theme is based entirely on the website of <a href=\"https://fossheim.io.\" alt=\"Sarah L. Fossheim\">Sarah L. Fossheim</a>."
 
 theme = "hugo-tania-theme"
 themesDir = "../.."

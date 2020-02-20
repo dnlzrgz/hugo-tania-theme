@@ -1,9 +1,9 @@
 .footer {
   border-top: 1px solid var(--blue);
   display: grid;
-  grid-template-areas: 'mail links';
+  grid-template-areas: 'mail links' 'copy copy';
   grid-template-columns: repeat(2, 1fr);
-  margin: 2.75rem auto;
+  margin: 0.75rem auto;
   max-width: 1200px;
   padding-bottom: 1.75rem;
   padding-top: 1.75rem;
@@ -30,13 +30,24 @@
   text-align: right;
   color: var(--darkest-blue);
   grid-area: links;
+  margin-bottom: 2.75rem;
+}
+
+.footer__copy {
+  grid-area: copy;
+  margin: 0 20%;
+  text-align: center;
 }
 
 @media (max-width: 577px) {
   .footer {
     grid-gap: 20px;
-    grid-template-areas: 'mail' 'links';
+    grid-template-areas: 'mail' 'links' 'copy';
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
+  }
+
+  .footer__copy {
+    margin: 0;
   }
 }

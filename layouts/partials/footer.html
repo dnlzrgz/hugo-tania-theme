@@ -1,5 +1,5 @@
-{{ if or $.Site.Params.Contact.email $.Site.Params.links }}
 <footer class="footer">
+  {{ if or $.Site.Params.Contact.email $.Site.Params.links }}
   {{ if $.Site.Params.Contact.email }}
   <div class="footer__contact">
     <p class="footer__header">
@@ -35,5 +35,11 @@
     {{ end }}
   </div>
   {{ end }}
+  {{ end }}
+
+  {{ if $.Site.Copyright }}
+  <div class="footer__copy">
+  <p>{{ safeHTML $.Site.Copyright }}</p>
+  </div>
+  {{ end }}
 </footer>
-{{ end }}
