@@ -2,14 +2,14 @@
   <article class="card__article">
     <header class="card__article__header">
       <h1 class="card__article__header__title">
-        <a href="{{ .Params.URL }}" alt="{{ .Params.Title }}">
+        <a href="{{ .Permalink }}" alt="{{ .Params.Title }}">
         {{ .Params.Title }}
       </a>
       </h1>
     </header>
 
     <main class="card__article__content">
-      <p>{{ .Content }}</p>
+      <p>{{ .Params.Description }}</p>
     </main>
 
     <footer class="card__article__footer">
