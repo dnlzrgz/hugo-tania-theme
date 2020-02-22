@@ -42,7 +42,15 @@ description = "Descrption of your project."
 googleAnalytics = "YOUR-GOOGLE-ANALYTICS-TOKEN"
 enableRobotsTXT = true
 language = "en-US"
-copyright = ""
+copyright = "© 2020 Daniel (Danielkvist)."
+```
+
+### Code
+
+To use the CSS styles defined to code blocks you will need to add the following line to your `config.toml` file:
+
+```toml
+pygmentsUseClasses=true
 ```
 
 ### Contact
@@ -56,17 +64,24 @@ To add your contact email to the footer you'll need to add to your `config.toml`
 
 ### Social
 
-To add your social links to the footer you'll need to add:
+To add a message before your social links:
 
 ```toml
 [params.social]
+  text = "Find more about me here:"
+```
+
+To add your social links to the footer you'll need to add:
+
+```toml
+[params.links]
   codepen = "codepen.io/yourusername"
   github = "github.com/yourusername"
   linkedin = "linkedin.com/in/yourprofile"
   twitter = "twitter.com/yourusername"
 ```
 
-But the above is just an example, you can add any link you want and it will be rendered as follows:
+You can add any link you want and it will be rendered as follows:
 
 ```html
 <!-- Using GitHub as an example -->
