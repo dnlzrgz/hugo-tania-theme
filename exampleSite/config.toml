@@ -7,7 +7,9 @@ copyright = "© 2020 Daniel (Danielkvist). This theme is based entirely on the w
 
 theme = "hugo-tania-theme"
 themesDir = "../.."
+
 pygmentsUseClasses=true
+paginate = 4
 
 [params]
   author = "Danielkvist"

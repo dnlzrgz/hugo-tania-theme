@@ -1,10 +1,12 @@
 {{ define "main" }}
 <main class="list main">
-  {{ $projects := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "posts")}}
+  {{ $projects := .Paginate (where .Data.Pages.ByDate "Type" "posts")}}
 
   {{ range $projects.Pages}}
   {{ .Render "card" }}
   {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
 
 </main>
 {{ end }}

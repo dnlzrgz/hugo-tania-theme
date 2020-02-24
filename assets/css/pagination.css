@@ -1,0 +1,14 @@
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 4.75rem;
+}
+
+.page-item {
+  cursor: pointer;
+}
+
+.active > .page-link {
+  color: var(--pink);
+}

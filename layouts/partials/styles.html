@@ -3,10 +3,11 @@
 {{ $header := resources.Get "css/header.css" }}
 {{ $main := resources.Get "css/main.css" }}
 {{ $code := resources.Get "css/code.css" }}
-{{ $footer := resources.Get "css/footer.css" }}
+{{ $pagination := resources.Get "css/pagination.css" }}
 {{ $cards := resources.Get "css/card.css" }}
+{{ $footer := resources.Get "css/footer.css" }}
 {{ $css := resources.Get "css/style.css" }}
-{{ $style := slice $vars $reset $header $main $code $footer $cards $css | resources.Concat "css/bundle.css" }}
+{{ $style := slice $vars $reset $header $main $code $cards $pagination $footer $css | resources.Concat "css/bundle.css" }}
 {{ $bundle := $style | resources.Minify | resources.Fingerprint }}
 
 <link rel="stylesheet" href="{{ $bundle.Permalink }}">
