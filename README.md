@@ -24,6 +24,8 @@ cd themes
 git submudole add https://github.com/danielkvist/hugo-tania-theme.git tania
 ```
 
+> If you are planning to use Netlify is recommended to install the theme as a git submodule.
+
 Then, on your `config.toml` file change the following line:
 
 ```toml
@@ -43,6 +45,14 @@ googleAnalytics = "YOUR-GOOGLE-ANALYTICS-TOKEN"
 enableRobotsTXT = true
 language = "en-US"
 copyright = "© 2020 Daniel (Danielkvist)."
+```
+
+### Pagination
+
+To set the number of items per page:
+
+```toml
+paginate = 7
 ```
 
 ### Code
