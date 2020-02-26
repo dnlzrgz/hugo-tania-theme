@@ -1,10 +1,10 @@
 name = "Hugo Tania Theme"
 license = "MIT"
 licenselink = "https://github.com/danielkvist/hugo-tania-theme/blob/master/LICENSE"
-description = "Tania is a very simple and clean theme for Hugo."
+description = "Tania is a simple and clean theme for Hugo."
 homepage = "https://github.com/danielkvist/hugo-tania-theme"
-tags = []
-features = []
+tags = ["blog", "responsive", "minimal", "clean", "simple", "personal", "google analytics", "minimalist", "fast", "accessible", "netlify"]
+features = ["fast", "simple", "accessible", "responsive"]
 min_version = "0.41"
 
 [author]
