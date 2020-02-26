@@ -1,5 +1,14 @@
 {{ define "main" }}
 <main class="single main">
 {{ .Content }}
+
+{{ if .Params.Tags }}
+<div class="sinle tags">
+{{ range .Params.Tags }}
+  <a href="{{ $.Site.BaseURL }}tags/{{ . }}" alt="{{ . }}">#{{ . }}</a>
+{{ end }}
+</div>
+
+{{ end }}
 </main>
 {{ end }}

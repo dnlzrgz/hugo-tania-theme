@@ -10,5 +10,5 @@
 }
 
 .active > .page-link {
-  color: var(--pink);
+  color: var(--darker-pink);
 }

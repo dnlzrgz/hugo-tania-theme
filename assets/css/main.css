@@ -1,6 +1,7 @@
 .main {
   color: var(--darkest-blue);
   margin: 7.75rem auto;
+  margin-bottom: 5.75rem;
   max-width: 600px;
   min-height: 90vh;
   text-align: justify;
@@ -30,6 +31,16 @@
 
 .notfound {
   text-align: center !important;
+}
+
+.single > .tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5.75rem;
+}
+
+.single > .tags > a {
+  margin-right: 0.75rem;
 }
 
 @media (max-width: 577px) {
