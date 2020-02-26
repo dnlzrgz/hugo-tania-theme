@@ -105,10 +105,44 @@ You can add any link you want and it will be rendered as follows:
 >
 ```
 
+## Front Matter
+
+### Single pages without tags
+
+```md
+---
+title: "About"
+description: "What is Tania and why you should care about it"
+menu: main
+weight: 1
+---
+```
+
+### Singles pages with tags
+
+```md
+---
+title: "Golang"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nisi massa."
+date: 2020-02-17T22:20:00+01:00
+publishDate: 2020-02-19T22:20:00+01:00
+tags: ["golang", "programming"]
+---
+```
+
+### List pages
+
+```md
+---
+title: "Blog"
+description: "I'm writing about stuff. Really interesting stuff"
+menu: main
+weight: 2
+---
+```
+
 ## Things I'm working on
 
-- Blogging support.
 - Better customization to change easily things like the color scheme.
 - Dark mode.
 - Caching with Service Workers.
-- Better lists pages.
