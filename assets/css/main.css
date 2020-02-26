@@ -43,6 +43,12 @@
   margin-right: 0.75rem;
 }
 
+.single > .author,
+.single > .date {
+  font-weight: 600;
+  text-align: right;
+}
+
 @media (max-width: 577px) {
   .main {
     width: 85%;

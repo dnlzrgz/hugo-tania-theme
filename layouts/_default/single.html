@@ -1,5 +1,13 @@
 {{ define "main" }}
 <main class="single main">
+{{ if .Params.Author}}
+<p class="author">By {{ .Params.Author }}</p>
+{{ end }}
+
+{{ if .Params.PublishDate}}
+<p class="date">On {{dateFormat $.Site.Params.DateFormat .Params.PublishDate }}</p>
+{{ end }}
+
 {{ .Content }}
 
 {{ if .Params.Tags }}
