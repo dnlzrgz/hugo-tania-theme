@@ -63,6 +63,17 @@ To use the CSS styles defined to code blocks you will need to add the following 
 pygmentsUseClasses=true
 ```
 
+### Other important params
+
+```toml
+[params]
+  author = "Your name"
+  description = "Tania is a simple and clean theme for Hugo".
+  dateFormat = "Monday, Jan 2, 2006"
+```
+
+> The parameters above are important and you should ensure that they are defined in your `config.toml` for the correct functioning of Tania.
+
 ### Contact
 
 To add your contact email to the footer you'll need to add to your `config.toml` the following lines:
