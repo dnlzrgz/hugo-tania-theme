@@ -47,6 +47,10 @@
     grid-template-rows: repeat(2, auto);
   }
 
+  .footer__social {
+    margin-bottom: 0;
+  }
+
   .footer__copy {
     margin: 0;
   }
