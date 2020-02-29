@@ -24,7 +24,7 @@ cd themes
 git submudole add https://github.com/danielkvist/hugo-tania-theme.git tania
 ```
 
-> If you are planning to use Netlify is recommended to install the theme as a git submodule.
+> If you are planning to use Netlify is recommended to install the theme as a git submodule. If you want to learn more about hosting your Hugo project on Netlify check [this page](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/).
 
 Then, on your `config.toml` file change the following line:
 
@@ -33,6 +33,8 @@ theme = "tania"
 ```
 
 ## Configuration
+
+> You can use the [`config.toml`](https://github.com/danielkvist/hugo-tania-theme/blob/master/exampleSite/config.toml) file of the example site as a guide.
 
 ### Base params
 
@@ -109,12 +111,15 @@ You can add any link you want and it will be rendered as follows:
 <a
   class="..."
   href="github.com/yourusername"
-  alt="github"
   target="_blank"
   rel="nofollow"
   >github</a
 >
 ```
+
+## Custom CSS  
+
+You can easily add your own CSS styles. To do this you just have to create in the root of your project the a folder called `assets`. Then, inside `assets`, create another folder called `css`. And finally you can create a file called `style.css` with your CSS styles.
 
 ## Front Matter
 
